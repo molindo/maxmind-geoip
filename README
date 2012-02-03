@@ -1,3 +1,13 @@
+Mavenized version of MaxMind's GeoIP Java API from http://www.maxmind.com/app/java
+
+Repackaged (original ZIP to maxmind-geoip project)
+- GeoIPJava-${version}/source => src/main/java/at/molindo/thirdparty
+- GeoIPJava-${version}/admin => [ignored]
+- GeoIPJava-${version}/*.java => [ignored]
+- GeoIPJava-${version}/* => same as ZIP
+
+=====[start of original README]=====
+
 To get started, run
 
 cd source/com/maxmind/geoip/
