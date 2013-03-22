@@ -703,6 +703,9 @@ public class LookupService {
 		try{
 		    record.latitude = Float.parseFloat(value);
 		} catch(NumberFormatException e) {
+			/*
+			 * msp: latitude=0 is a valid latitude, shouldn't it be an invalid number such as -1?
+			 */
 		    record.latitude = 0;
 		}
 	    }
@@ -710,7 +713,10 @@ public class LookupService {
 		try{
 		    record.longitude = Float.parseFloat(value);
 		} catch(NumberFormatException e) {
-		    record.latitude = 0;
+			/*
+			 * msp: longitude=0 is a valid longitude, shouldn't it be an invalid number such as -1?
+			 */
+		    record.longitude = 0;
 		}
 	    }
 	    // dm depreciated use me ( metro_code ) instead
